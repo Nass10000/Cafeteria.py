@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Visítanos | La Caffettiera{% endblock %}
+
+{% block content %}
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Ven a visitarnos</span>
+                <span class="section-heading-lower">Horarios</span>
+              </h2>
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Domingo
+                  <span class="ml-auto">Cerrado</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Lunes a Jueves
+                  <span class="ml-auto">7:00 AM a 8:00 PM</span>
+                </li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Viernes a Sábado
+                  <span class="ml-auto">7:00 AM a 9:00 PM</span>
+                </li>
+              </ul>
+              <p class="address mb-5">
+                <em>
+                  <strong>1116 Orchard Street</strong>
+                  <br>
+                  Golden Valley, Minnesota
+                </em>
+              </p>
+              <p class="mb-0">
+                <small>
+                  <em>Llama al (612) 555-6425</em>
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
