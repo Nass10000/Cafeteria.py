@@ -13,6 +13,7 @@ class Service(models.Model):
         verbose_name = "servicio"
         verbose_name_plural = "servicios"
         ordering = ["-created"]
+        app_label = "services"
 
     def __str__(self):
         return self.title
