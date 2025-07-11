@@ -2,33 +2,10 @@
 
 {% load static %}
 
-{% block title %}Servicios | La Caffettiera{% endblock %}
+{% block title %}Servicios{% endblock %}
 
 {% block content %}
 
-<!-- Sección de introducción estática -->
-<section class="page-section">
-  <div class="container">
-    <div class="product-item">
-      <div class="product-item-title d-flex">
-        <div class="bg-faded p-5 d-flex ml-auto rounded">
-          <h2 class="section-heading mb-0">
-            <span class="section-heading-upper">Servicios</span>
-            <span class="section-heading-lower">Lo que ofrecemos</span>
-          </h2>
-        </div>
-      </div>
-      <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'img/products-01.jpg' %}" alt="">
-      <div class="product-item-description d-flex mr-auto">
-        <div class="bg-faded p-5 rounded">
-          <p class="mb-0">Ofrecemos los mejores servicios para nuestros clientes, con atención personalizada y productos de primera calidad.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Servicios dinámicos de la base de datos -->
 {% for service in services reversed %}
     <section class="page-section">
     <div class="container">
