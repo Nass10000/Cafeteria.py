@@ -1,4 +1,5 @@
 {% load static %}
+{% load pages_extras %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -65,7 +66,7 @@
                     href="{% url 'contact' %}">Contacto</a>
             </li>
             <li class="nav-item px-lg-4 
-                {% if request.path == '/blog/' %}active{% endif %}">
+                {% if request.resolver_match.url_name == 'blog' or request.resolver_match.url_name == 'category' %}active{% endif %}">
                 <a class="nav-link text-uppercase text-expanded" 
                     href="{% url 'blog' %}">Blog</a>
             </li>
@@ -81,30 +82,12 @@
     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <p class="m-0">
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	    </p>
-        <p class="m-0 mbt">
-        	<a href="{% url 'sample' %}" class="link">Política de privacidad</a> ·
-        	<a href="{% url 'sample' %}" class="link">Aviso legal</a> ·
-        	<a href="{% url 'sample' %}" class="link">Cookies</a>
-		</p>
+            {% get_page_list as page_list %}
+            {% for page in page_list %}
+                <a href="{% url 'page' page.id %}" class="link">{{ page.title }}</a>
+                {% if not forloop.last %} · {% endif %}
+            {% endfor %}
+        </p>
         <p class="m-0 mbt1">&copy; La Caffettiera 2018</p>
       </div>
 	</footer>
