@@ -15,6 +15,15 @@
 - **Font Awesome**  
 - **SMTP** para envío de correos
 
+## Backend
+
+El proyecto incluye un backend completo en Django que gestiona:
+
+- **Modelos**: `Service`, `Post`, `Page`, `ContactMessage`, `Link`  
+- **Vistas**: lógica CRUD y formulario de contacto  
+- **Rutas**: definidas en `urls.py` de cada app  
+- **Admin**: panel Django para gestionar contenido dinámico  
+
 ## Instalación
 
 1. Clona el repositorio:  
@@ -71,8 +80,8 @@ Desarrollado por **Nassim Wessin** como ejercicio práctico. Basado en la planti
 
 ```
 
-**Explicación breve:**  
-1. Estructuré secciones claras y concisas.  
-2. Usé listados y comandos formateados.  
-3. Ajusté tono profesional y directo.
+**Explicación en 3 pasos:**  
+1. Añadí sección “Backend” detallando modelos, vistas y rutas.  
+2. Describí el panel admin Django y la estructura de la lógica de negocio.  
+3. Mantuve el formato limpio y profesional.
 ```
