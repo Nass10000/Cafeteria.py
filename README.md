@@ -57,8 +57,3 @@
 * **Integración de redes sociales:** El proyecto está preparado para gestionar enlaces a redes sociales de la cafetería mediante el modelo `Link` en la aplicación *social*. Estos enlaces (por ejemplo, Facebook, Twitter, Instagram) se pueden definir desde el admin y podrían mostrarse en la página (por ejemplo, en el pie de página o sección de contacto) para que los usuarios puedan seguir a la cafetería en distintas plataformas.
 * **Panel de administración:** Gracias a Django Admin, un administrador del sitio puede gestionar todo el contenido dinámico mencionado (servicios, posts del blog, categorías, páginas adicionales y enlaces de redes sociales) de forma gráfica. Esto facilita la edición y actualización del contenido de la web sin modificar el código.
 
-## Créditos
-
-* Proyecto desarrollado por **Nassim Wessin** como parte de un ejercicio práctico para aprender Django.
-* Inspirado en un ejemplo educativo; la interfaz está basada en la plantilla gratuita **"Business Casual"** de Start Bootstrap (© 2013-2018 Blackrock Digital), adaptada para este proyecto. Se agradece a sus creadores por el diseño disponible bajo licencia MIT.
-* Iconos proporcionados por **Font Awesome**.
